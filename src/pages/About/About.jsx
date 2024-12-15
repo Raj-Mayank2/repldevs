@@ -1,6 +1,8 @@
 import React from 'react';
 import './About.css';
-
+import suman from '../../assets/alumni/suman.png'
+import ilham from '../../assets/alumni/ilham.jpeg'
+import arghadeep from '../../assets/alumni/arghadeep.png'
 const About = () => {
   const milestones = [
     'College web development club',
@@ -16,21 +18,21 @@ const About = () => {
       id: 1,
       name: "Arghadeep Mallick",
       text: "As an alumnus of Repl, I can confidently say it was a game-changer in my journey. The supportive community, challenging projects, and collaborative spirit helped me build not just coding skills but also a problem-solving mindset. Repl taught me how to turn ideas into real-world solutions, and that experience continues to shape my career.",
-      image: "/path-to-nat-image.jpg",
+      image: arghadeep,
       bgColor: "#ffd4d4"
     },
     {
       id: 2,
       name: "Suman Ojha",
       text: "Being part of Repl was one of the most rewarding experiences of my life. It wasn't just about learning to code; it was about learning how to think critically, collaborate effectively, and create impactful projects. Those lessons have been invaluable in my career.",
-      image: "/path-to-celia-image.jpg",
+      image: suman,
       bgColor: "#ffe4bc"
     },
     {
       id: 3,
-      name: "Ilham Ansari",
+      name: "Md. Ilham Ansari",
       text: "At Repl, I found more than just coding challenges; I found a network of like-minded innovators. The mentorship, teamwork, and hands-on projects gave me the skills and confidence to excel beyond the classroom.",
-      image: "/path-to-bob-image.jpg",
+      image: ilham,
       bgColor: "#d1f5d3"
     }
   ];
