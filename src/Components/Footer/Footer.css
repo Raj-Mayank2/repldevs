@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lilita+One&display=swap');
+
+.footer {
+    background-color: #7dd3fc;  /* Sky blue color */
+    padding: 2rem 0;
+    width: 100%;
+    background: url("../../assets/banner4.jpg") no-repeat center center; /* Adjust the path to the banner */
+    background-size: cover;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-slogan {
+    font-family: "Lilita One", sans-serif;
+    font-weight:400;
+    color: #42A5F5;  /* Gray-700 */
+    max-width: 800px;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    font-size: 1.2rem;
+  }
+  
+  .footer-logo {
+    margin-bottom: 2rem;
+  }
+  
+  .footer-logo img {
+    height: 120px;
+    width: 120px;
+    object-fit: contain;
+  }
+  
+  .footer-social {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .social-link {
+    display: block;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s ease;
+  }
+  
+  .social-link:hover {
+    transform: scale(1.1);
+  }
+  
+  .social-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .footer-copyright {
+    color: #fff;  /* Gray-700 */
+    font-size: 0.875rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 640px) {
+    .footer-slogan {
+      font-size: 0.875rem;
+    }
+    
+    .footer-logo img {
+      height: 100px;
+      width: 100px;
+    }
+    
+    .social-link {
+      width: 32px;
+      height: 32px;
+    }
+    
+    .footer-container {
+      padding: 0 0.5rem;
+    }
+  }

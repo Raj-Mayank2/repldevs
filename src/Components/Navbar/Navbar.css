@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+nav {
+    width: 100%;
+    background: url("../../assets/banner.jpg") no-repeat center center; /* Adjust the path to the banner */
+    background-size: cover;
+    color: #333;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+nav:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly darken background on hover */
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 25px; /* Adjust space between links */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 8px;
+    cursor: pointer;
+    transition: color 0.3s ease, font-size 0.3s ease, text-shadow 0.3s ease;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+}
+.btn1 {
+    padding: 12px;
+    background: #42A5F5;
+    border: none;
+    color: inherit;
+    border-radius: 12px;
+    font-size: 20px;
+    font-family: "SUSE", sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+nav ul li:hover {
+    color: #0078ff;
+    font-size: 19px; /* Slightly increase font size */
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.3); /* Enhanced text shadow on hover */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    nav ul {
+        gap: 20px; /* Reduce space between links */
+    }
+
+    nav ul li {
+        font-size: 16px; /* Reduce font size */
+    }
+
+    .logo {
+        width: 70px; /* Reduce logo size */
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        gap: 10px; /* Further reduce space between links */
+    }
+
+    nav ul li {
+        font-size: 14px; /* Further reduce font size */
+    }
+
+    .logo {
+        width: 60px; /* Further reduce logo size */
+    }
+}
